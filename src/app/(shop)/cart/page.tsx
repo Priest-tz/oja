@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react"; // 1. Add useEffect/useState
 import Link from "next/link";
 import { useCartStore } from "@/store/useCartStore";
 import { Minus, Plus, Trash2, ArrowRight } from "lucide-react";
@@ -7,6 +8,8 @@ import { useRouter } from "next/navigation";
 
 export default function CartPage() {
 	const router = useRouter();
+	const [mounted, setMounted] = useState(false); // 2. Hydration state
+
 	const {
 		cart,
 		updateQuantity,
@@ -15,6 +18,14 @@ export default function CartPage() {
 		getVat,
 		getTotal,
 	} = useCartStore();
+
+	// 3. Set mounted to true on client
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	// 4. Return null or loader while mounting to prevent mismatch
+	if (!mounted) return <div className="min-h-screen bg-white" />;
 
 	if (cart.length === 0) {
 		return (
