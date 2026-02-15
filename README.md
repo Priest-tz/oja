@@ -1,11 +1,6 @@
-# QuickServe — E-Commerce Storefront
-
-> **AltSchool of Frontend Engineering — Baraka 2025 | Third Semester | Month 4 Capstone Project**
+# ỌJÀ — E-Commerce Storefront
 
 A fully functional, customer-facing e-commerce storefront built with Next.js 15, featuring dynamic product discovery, persistent cart management, and live payment processing via the Paystack gateway.
-
-**Live Demo:** [your-deployment-url.vercel.app](https://your-deployment-url.vercel.app)  
-**GitHub Repo:** [github.com/your-username/quickserve](https://github.com/your-username/quickserve)
 
 ---
 
@@ -20,13 +15,12 @@ A fully functional, customer-facing e-commerce storefront built with Next.js 15,
 - [Environment Variables](#environment-variables)
 - [API Reference](#api-reference)
 - [Deployment](#deployment)
-- [Evaluation Rubric Compliance](#evaluation-rubric-compliance)
 
 ---
 
 ## Project Overview
 
-QuickServe is a production-grade e-commerce storefront that allows users to browse a live product catalog, manage a persistent shopping cart, and complete purchases securely through Paystack. The project demonstrates real-world frontend engineering practices including server-side API orchestration, client-side state persistence, form validation, and third-party payment SDK integration.
+ỌJÀ is a production-grade e-commerce storefront that allows users to browse a live product catalog, manage a persistent shopping cart, and complete purchases securely through Paystack. The project demonstrates real-world frontend engineering practices including server-side API orchestration, client-side state persistence, form validation, and third-party payment SDK integration.
 
 ---
 
